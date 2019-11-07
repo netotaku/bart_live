@@ -1,0 +1,28 @@
+.grid{
+    
+    
+
+    &__unit{
+        display: block; 
+        &:not(:last-child){
+            padding-bottom: $padding;        
+        }
+    }
+
+    @media only screen and (min-width: $break) {
+        margin: -$padding;
+        display: flex;
+        &__unit{
+            padding: $padding;            
+            &--half{
+                width: 50%;
+            }
+            &--third{
+                width: 33.33%;
+            }
+            &--quarter{
+                width: 25%;
+            }
+        }
+    }
+}

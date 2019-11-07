@@ -14,3 +14,14 @@ $break2: 800px;
 @import "banner";
 @import "opacity";
 @import "section";
+@import "grid";
+@import "card";
+
+.u-{
+    &no-points{
+        list-style-type: none;
+    }
+    &green{
+        color: $green;
+    }
+}
