@@ -1,13 +1,7 @@
 .banner{
+    display: block;
     padding: 0 $padding;
     background: $green;
     line-height: 30px;
-    a{
-        color: #fff;
-    }
-    &__cancel{
-        float: right;
-        text-decoration: none;
-        font-weight: bold;
-    }
+    color: rgba(0,0,0,.6);
 }

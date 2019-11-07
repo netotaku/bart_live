@@ -1,0 +1,10 @@
+.form{
+    &__text{
+        background: none;
+        border: solid 1px #666;
+        padding: $padding/2 $padding;
+        display: block;
+        font-size: 1em;        
+        font-family: 'DIN Medium'
+    }
+}

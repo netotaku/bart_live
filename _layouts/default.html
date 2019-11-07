@@ -3,14 +3,15 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Bart - Creating magic together</title>
+        <title>Bart - {{ page.title | strip_html }}</title>
         <link rel="stylesheet" href="/assets/bart.css?{{ site.time | date: '%s' }}">
         <meta name=”robots” content=”nofollow” /> <!-- REMOVE -->
+
         <link rel="shortcut icon" href="https://bart-ingredients.co.uk/wp-content/uploads/2015/02/favicon1.png" />
 
-        <meta property="og:image" content="https://beat.rehab/assets/dist/images/content/1200x630-share-Leikeli47-Wash-and-Set.jpg"/>
-        <meta property="og:title" content="Bart Ingredients"/>
-        <meta property="og:description" content="Create some magic together"/>
+        <meta property="og:image" content="https://bart.agency.af/assets/img/hero.jpg"/>
+        <meta property="og:title" content="{{ page.title | strip_html }}"/>
+        <meta property="og:description" content=""/>
         <meta property="og:site_name" content="Bart Ingredients"/>
         <meta property="og:url" content="https://bart.co.uk/"/>
         <meta property="og:type" content="website" />
@@ -21,72 +22,12 @@
 
     </head>
     <body>
+        <a target="_window" class="banner banner__link" href="https://bart-ingredients.co.uk/">Find out more about Bart Ingredients</a>            
         
-        <div class="banner">
-            <a target="_window" class="banner__link" href="https://bart-ingredients.co.uk/">Find out more about Bart Spices</a>
-            <a href="" class="banner__cancel">x</a>
-        </div>
+        {{ content }}
+        {% include footer.html %}
 
-        <header>
-            <div class="hero">
-                <div class="opacity">
-                    <h1 class="hero__strap">Creating<br>magic together</h1>
-                </div>
-            </div>
-            <div class="section hero__base">
-
-                <div class="brand hero__base__brand">
-                    <img alt="Bart Spices Logo" src="/assets/img/brand.png"></div>
-
-                <div class="hero__base__jars">    
-                    <div class="jar hero__base__jars__jar">
-                        <img alt="Jar of Bart's Smoked Garlic" src="/assets/img/garlic.png"></div>
-                    
-                    <div class="jar hero__base__jars__jar">
-                        <img alt="Jar of Bart's Black Garlic" src="/assets/img/black.png"></div>
-                </div>
-
-                <div class="hero__base__intro">
-                    <h2><span class="u-green">New</span> In Store &amp; Online
-                        <br>11th of Nov 2019
-                    </h2>
-                    <p>Add a spoonful of inspiration to your meals 
-                        with Bart <a target="_blank" href="https://market.bart-ingredients.co.uk/collections/spices">Black Garlic</a> &amp; <a target="_blank" href="https://market.bart-ingredients.co.uk/collections/spices">Oak-Smoked Garlic</a> pastes.</p>                    
-                </div>
-
-            </div>
-        </header>
-
-        <section class="section section--grey" id="recipes">
-            <h2>Recipes</h2>
-
-            <div class="grid">
-                <a class="grid__unit grid__unit--half" href="#">
-                    <div class="card">
-                        <div class="card__img"></div>
-                        <div class="card__link">Smoked Garlic &amp; Mushroom Stroganoff</div>
-                    </div>                    
-                </a>
-                <a class="grid__unit grid__unit--half" href="#">
-                    <div class="card">
-                        <div class="card__img"></div>
-                        <div class="card__link">Black Garlic &amp; Chipotle Roast Beef</div>
-                    </div>                    
-                </a>
-            </div>
-
-        </section>
-
-        <footer class="section">
-
-
-        </footer>
- 
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-        <script>
-
-        </script>
-            
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>    
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151736589-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];

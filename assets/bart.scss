@@ -16,6 +16,10 @@ $break2: 800px;
 @import "section";
 @import "grid";
 @import "card";
+@import "footer";
+@import "button";
+@import "form";
+@import "type";
 
 .u-{
     &no-points{
@@ -23,5 +27,22 @@ $break2: 800px;
     }
     &green{
         color: $green;
+    }
+    &standard-width{
+        display: inline;
+        max-width: 100%;
+        width: auto;
+    }
+    &list{
+        margin-bottom: $padding;
+        padding-left: $padding*2;
+    }
+    @media only screen and (min-width: $break) {
+        &pull-right{
+            text-align: right;
+        }
+        &measure{
+            width: 66.66%;
+        }
     }
 }

@@ -1,9 +1,28 @@
 .section{
+    
     padding: $padding*2;
+
+
+
+    &__row{
+        margin: auto;
+        max-width: 1200px;
+    }
     &--grey{
         background: #222;
     }
+    &--black{
+        background: #000;
+    }
     @media only screen and (min-width: $break2) {
         padding: $padding*2 6vw;
+
+        &--extra{
+            padding: $padding*4 6vw;
+        }
+
+        &--extra-bottom{
+            padding-bottom: $padding*4;
+        }
     }
 }

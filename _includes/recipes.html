@@ -1,0 +1,18 @@
+<section class="section section--extra section--grey" id="recipes">
+    <div class="section__row">
+        <h2>Recipes</h2>
+        <div class="grid">
+            {% for recipe in site.data.recipes %}                    
+                <a class="grid__unit grid__unit--half" href="{{ recipe.path }}">
+                    <div class="card">
+                        <div class="card__img" style="background-image: url({{ recipe.thumb }})"></div>
+                        <div class="card__jar">
+                            <img src="{{ recipe.jar }}">
+                        </div>
+                        <div class="card__link">{{ recipe.title }}</div>
+                    </div>                    
+                </a>                    
+            {% endfor %}
+        </div>
+    </div>
+</section>

@@ -1,5 +1,6 @@
 .hero{
-    background: url(/assets/img/hero.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-color: #333;
     background-size: cover;
     padding-top: 50%;
     text-align: center;
@@ -33,9 +34,9 @@
             text-align: left;
 
             &__jars{
-                top: -6vw;
+                top: -9vw;
                 position: absolute;
-                right: $padding*2;
+                right: 0; // $padding*2;
                 &__jar{
                     width: 14vw;
                     padding: $padding*.25;
@@ -47,7 +48,7 @@
 
         @media only screen and (min-width: $break2) {
             &__jars{                
-                right: 6vw;                
+                // right: 6vw;                
             }
         }
 

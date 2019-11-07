@@ -1,7 +1,17 @@
-.card{    
+.card{ 
+    display: block;   
     &__img{
         padding-top: 68%;
         background: #333;
         margin-bottom: $padding;
+    }
+    &__jar{
+        width: 80px;
+        position: absolute;
+        right: $padding;
+        margin-top: -120px;
+    }
+    &__link{
+        padding-right: 100px;
     }
 }
