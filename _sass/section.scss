@@ -1,0 +1,9 @@
+.section{
+    padding: $padding*2;
+    &--grey{
+        background: #222;
+    }
+    @media only screen and (min-width: $break2) {
+        padding: $padding*2 6vw;
+    }
+}

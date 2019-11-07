@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h2,h3,h4,h5,h6{
+    font-family: 'DIN Bold';
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.2;
+    margin-bottom: $padding;
+}
+
+a{
+    color: $green;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+p:not(:last-child){
+    margin-bottom: $padding;    
+}
+
+html, body{
+    line-height: 1.6;
+    font-family: sans-serif;
+    font-size: 1em;
+    height: 100%;
+
+    background: #111;
+    color: #fff;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    font-family: 'DIN Medium';
+
+    color: #ccc;
+}
+
+img{
+    display: block;
+    width: 100%;
+}

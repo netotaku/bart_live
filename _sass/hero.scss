@@ -1,0 +1,57 @@
+.hero{
+    background: url(/assets/img/hero.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 50%;
+    text-align: center;
+
+    &__strap{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        line-height: 1;
+        margin-top: -14vw;
+        font-size: 12vw;
+        font-family: 'Atmosphere Script Typeface';
+        font-weight: normal;
+        color: #fff;
+    }
+    &__base{
+        margin-top: -54px;        
+        text-align: center;
+        &__jars{
+            &__jar{
+                width: 40vw;
+                max-width: 145px;
+                padding: $padding;
+                display: inline-block;
+
+            }
+        }        
+
+        @media only screen and (min-width: $break) {
+
+            text-align: left;
+
+            &__jars{
+                top: -6vw;
+                position: absolute;
+                right: $padding*2;
+                &__jar{
+                    width: 14vw;
+                    padding: $padding*.25;
+                }
+            }
+
+        }
+
+        @media only screen and (min-width: $break2) {
+            &__jars{                
+                right: 6vw;                
+            }
+        }
+
+    }
+
+
+
+}

@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'DINCond';
+    src: url('/assets/fonts/DINCond-Bold.eot');
+    src: url('/assets/fonts/DINCond-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/DINCond-Bold.woff2') format('woff2'),
+        url('/assets/fonts/DINCond-Bold.woff') format('woff'),
+        url('/assets/fonts/DINCond-Bold.svg#DINCond-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN Bold';
+    src: url('/assets/fonts/DIN-Bold.woff2') format('woff2'),
+        url('/assets/fonts/DIN-Bold.woff') format('woff'),
+        url('/assets/fonts/DIN-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DIN Medium';
+    src: url('/assets/fonts/DIN-Medium.woff2') format('woff2'),
+        url('/assets/fonts/DIN-Medium.woff') format('woff'),
+        url('/assets/fonts/DIN-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Atmosphere Script Typeface';
+    src: url('/assets/fonts/AtmosphereScriptTypeface.woff2') format('woff2'),
+        url('/assets/fonts/AtmosphereScriptTypeface.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
