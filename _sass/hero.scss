@@ -5,6 +5,13 @@
     padding-top: 50%;
     text-align: center;
 
+    &__down{
+        position: absolute;
+        width: 100%;
+        bottom: $padding;
+        display: none;
+    }
+
     &__strap{
         position: absolute;
         width: 100%;
@@ -25,41 +32,31 @@
                 width: 40vw;
                 max-width: 145px;
                 padding: $padding;
-                display: inline-block;
-                &--smaller{
-                    // width: 22vw;
-                    // z-index: 0;
-                    // margin-left: -6vw; 
-                    // margin-bottom: 6vw;
-                }
+                display: inline-block;                
             }
         }        
 
         @media only screen and (min-width: $break) {
 
             text-align: left;
-
+            
             &__jars{
                 top: -9vw;
                 position: absolute;
-                right: 0; // $padding*2;
+                right: 0;
                 &__jar{
                     width: 14vw;
                     padding: $padding*.25;
                     padding-right: 0;
                 }
             }
-
         }
-
-        @media only screen and (min-width: $break2) {
-            &__jars{                
-                // right: 6vw;                
-            }
+    }
+    @media only screen and (min-width: $break) {
+        
+        &__down{                
+            display: block;
         }
 
     }
-
-
-
 }
