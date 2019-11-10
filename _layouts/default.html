@@ -5,35 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bart - {{ page.title | strip_html }}</title>
         <link rel="stylesheet" href="/assets/bart.css?{{ site.time | date: '%s' }}">
-        <meta name=”robots” content=”nofollow” /> <!-- REMOVE -->
-
         <link rel="shortcut icon" href="https://bart-ingredients.co.uk/wp-content/uploads/2015/02/favicon1.png" />
-
-        <meta property="og:image" content="https://bart.agency.af/assets/img/hero.jpg"/>
+        <meta property="og:image" content="https://bart.co.uk/assets/img/hero.jpg"/>
         <meta property="og:title" content="{{ page.title | strip_html }}"/>
         <meta property="og:description" content="Bart is all about flavour, for over 50 years, discovering & sharing the best spices, herbs & seasonings from around the world to create magic in every taste."/>
         <meta property="og:site_name" content="Bart Ingredients"/>
         <meta property="og:url" content="https://bart.co.uk/"/>
-        <meta property="og:type" content="website" />
-
-        <script src="https://use.fontawesome.com/610695cb43.js"></script>
-
-        <!-- t: @bartingrdients -->
-        <!-- i: @bartingrdients -->
-        <!-- f: https://www.facebook.com/TheBartIngredientsCompany/ -->
-
+        <meta property="og:type" content="website" />        
     </head>
-
     {% if page.body_class %}
         <body class="{{ page.body_class }}">
     {% else %}
         <body>
-    {% endif %}
-        
+    {% endif %}    
         {{ content }}
-        {% include footer.html %}
-
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>    
+        {% include footer.html %}        
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151736589-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
