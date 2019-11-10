@@ -3,6 +3,7 @@
 
 $padding: 10px;
 $green: #c2d500;
+$red: #e42313;
 $break: 600px;
 $break2: 800px;
 
@@ -36,6 +37,15 @@ $break2: 800px;
     &list{
         margin-bottom: $padding;
         padding-left: $padding*2;
+        &--spaced{
+            li{
+                margin-bottom: $padding*2;
+                // font-size: 1.2em;
+            }
+        }
+    }
+    &hide{
+        display: none;
     }
     @media only screen and (min-width: $break) {
         &pull-right{
@@ -43,6 +53,32 @@ $break2: 800px;
         }
         &measure{
             width: 66.66%;
+        }
+    }
+}
+
+////////////
+
+.stroganoff{
+    .hero__strap{
+        top: 36%;
+    }
+}
+
+.recipe{
+    .cols{
+        .grid{
+            flex-direction: row;
+        }
+    }
+}
+
+@media only screen and (min-width: $break) {
+    .recipe{
+        .cols{
+            .grid{
+                flex-direction: row-reverse;
+            }
         }
     }
 }

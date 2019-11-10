@@ -21,11 +21,17 @@
         text-align: center;
         &__jars{
             &__jar{
+                z-index: 1;
                 width: 40vw;
                 max-width: 145px;
                 padding: $padding;
                 display: inline-block;
-
+                &--smaller{
+                    // width: 22vw;
+                    // z-index: 0;
+                    // margin-left: -6vw; 
+                    // margin-bottom: 6vw;
+                }
             }
         }        
 

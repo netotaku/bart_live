@@ -3,6 +3,11 @@
     margin: auto;
     width: 120px;
     margin-bottom: $padding;
+
+    &--inline{
+        display: inline;
+    }
+
     @media only screen and (min-width: $break) {
         margin: 0;
         margin-bottom: $padding*2;

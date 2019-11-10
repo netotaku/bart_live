@@ -9,7 +9,13 @@
             <a href="/" class="brand hero__base__brand">
                 <img alt="Bart Spices Logo" src="/assets/img/brand.png"></a>
 
-            {{ page.jars }}
+            <div class="hero__base__jars">    
+                <a href="/smoked-garlic-paste/" class="jar hero__base__jars__jar{{ page.jars.smoked_modifier }}">
+                    <img alt="Jar of Bart's Smoked Garlic" src="/assets/img/jar_smoked.png"></a>
+                
+                <a href="/black-garlic-paste/" class="jar hero__base__jars__jar{{ page.jars.black_modifier }}">
+                    <img alt="Jar of Bart's Black Garlic" src="/assets/img/jar_black.png"></a>
+            </div>
 
             <div class="hero__base__intro">
                 {{ page.base }}

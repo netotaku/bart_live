@@ -1,35 +1,90 @@
 ---
+body_class: recipe
 layout: default
 title: 'Black Garlic<br> &amp; Chipotle Roast Beef'
 permalink: /Black-Garlic-And-Chipotle-Roast-Beef/
-jars: |
-    <div class="hero__base__jars">            
-        <a href="/black-garlic-paste/" class="jar hero__base__jars__jar">
-            <img alt="Jar of Bart's Black Garlic" src="/assets/img/black.png"></a>
-    </div>
+jars: 
+    smoked_modifier: ' u-hide'
 base: ''
-image: ''
+image: /assets/img/hero_roast_beef.jpg
+left: |
+
+    <p><img src="/assets/img/hero_roast_beef.jpg"></p>
+
+    <h3>Method</h3>    
+
+    <ol class="u-list">   
+        <li>Mix together the black garlic paste, chipotle, paprika, orange zest and thyme leaves, then slather liberally over the beef with plenty of salt and pepper and leave to marinate in the fridge overnight</li>
+        <li>Remove the beef from the fridge an hour before cooking to reach room temperature</li>
+        <li>Preheat the oven to 220°C/gas mark 7</li>
+        <li>Toss the carrots in olive oil and sprinkle with salt and pepper</li>
+        <li>Place the beef in an oven tray with the carrots arranged around the sides. The carrots will roast in the beef drippings, making them extra delicious</li>
+        <li>Place the tray in the oven. After 20 minutes of roasting at 220°C, turn the oven down to 160°C and roast for a further 30 (rare) to 40 minutes (medium-rare)</li>
+        <li>Remove from the oven, lift the beef onto a plate and cover with foil. Leave to rest for 20 minutes</li>
+        <li>In the meantime, make a quick pan sauce. Strain the juices from the tray into a pan and add the wine and chicken stock. Bring to the boil and reduce for a few minutes</li>
+        <li>Whisk in a spoonful of flour to thicken and simmer to cook out the floury taste. Taste and season with salt and pepper</li>
+        <li>Carve the beef against the grain and serve up with roast carrots and gravy</li>
+    </ol>
+
+
+right: |
+    <div class="type">
+
+        <h2>Black garlic and chipotle roast beef with beef dripping carrots</h2>
+        <p>This roast beef rib recipe sees the prize cut slathered 
+            in Bart Black Garlic Paste, smoky chipotle and fragrant thyme. 
+            As the beef roasts, the carrots in the bottom of the pan take on all the 
+            delicious flavoured fat to create a wonderful side. Add roast potatoes for a 
+            complete Sunday roast.</p>
+
+        <table class="table">
+            <tr>
+                <th>Dish</th>
+                <td>Main</td>
+            </tr>
+            <tr>
+                <th>Challenge</th>
+                <td>Easy</td>
+            </tr>
+            <tr>
+                <th>Serves</th>
+                <td>6-8</td>
+            </tr>
+            <tr>
+                <th>Cooking time</th>
+                <td>60 minutes, plus marinating and resting time</td>
+            </tr>                        
+        </table>
+
+        <h3>Ingredients</h3>
+        
+        <ul class="u-list">
+            <li>1kg beef, ideally a boneless rib of beef</li>
+            <li>1 tbsp of Bart Black Garlic Paste</li>
+            <li>1 tsp of Bart Chipotle Chilli Flakes</li>
+            <li>1/2 tsp of Bart Sweet Smoked Paprika</li>
+            <li>1 orange, zested</li>
+            <li>1 tbsp of Bart Thyme leaves</li>   
+        </ul>
+
+        <h4>CARROTS</h4>
+        
+        <ul class="u-list">
+            <li>8 carrots, peeled and halved lengthways</li>    
+            <li>olive oil</li>
+            <li>salt</li>   
+            <li>pepper</li>
+        </ul>
+
+        <h4>PAN SAUCE</h4>  
+
+        <ul class="u-list">
+            <li>250ml of chicken stock</li>
+            <li>1 dash of red wine</li> 
+            <li>1 tbsp of flour</li>    
+        </ul>
+
+    </div>
 ---
-
 {% include hero.html %}
-
-<section class="section section--extra">
-    <div class="section__row">
-        <div class="grid">
-            <div class="grid__unit grid__unit--two-thirds">
-                <div class="type">
-                    <h2>Method</h2>
-                </div>
-            </div>
-            <div class="grid__unit grid__unit--third">
-                <h2>Ingredients</h2>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="section__row">
-        <img src="/assets/img/hr.svg">
-    </div>
-</section>
+{% include cols.html %}

@@ -1,35 +1,67 @@
 ---
+body_class: 'stroganoff recipe'
 layout: default
 title: 'Smoked Garlic<br> &amp; Mushroom Stroganoff'
 permalink: /Smoked-Garlic-And-Mushroom-Stroganoff/
-jars: |
-    <div class="hero__base__jars">            
-        <a href="/black-garlic-paste/" class="jar hero__base__jars__jar">
-            <img alt="Jar of Bart's Black Garlic" src="/assets/img/black.png"></a>
-    </div>
+jars: 
+    black_modifier: ' u-hide'
 base: ''
-image: ''
+image: /assets/img/hero_stroganoff.jpg
+left: |
+    <p><img src="/assets/img/hero_stroganoff.jpg"></p>
+
+    <h3>Method</h3>    
+
+    <ol class="u-list">               
+        <li>Heat the vegetable oil in a large pan and add the onions with a pinch of salt. Cook for a few minutes until starting to soften, then add the oak-smoked garlic paste and smoked paprika</li>        
+        <li>Cook for another minute or so and then add the mushrooms and butter. Sweat down for about 5 minutes</li>            
+        <li>Once the mushrooms are cooked, add the brandy and reduce by half. Add the stock and reduce by two-thirds</li>            
+        <li>Turn off the heat, then stir in the sour cream and herbs. Taste and season with salt and pepper. Do not heat up again after the cream is added or the sauce may split</li>
+    </ol>  
+
+right: |
+    <div class="type">
+        <h2>Oak-smoked garlic and mushroom stroganoff</h2>
+
+        <p>A rich and creamy stroganoff is the perfect way to warm up on a cold evening. This vegetarian mushroom stroganoff is given extra depth thanks to Bart Smoked Garlic Paste, which infuses the sauce with a fantastic flavour.</p>
+
+        <table class="table">
+            <tr>
+                <th>Dish</th>
+                <td>Main</td>
+            </tr>
+            <tr>
+                <th>Challenge</th>
+                <td>Easy</td>
+            </tr>
+            <tr>
+                <th>Serves</th>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th>Cooking time</th>
+                <td>25 minutes</td>
+            </tr>                        
+        </table>
+
+        <h3>Ingredients</h3>
+        
+        <ul class="u-list">
+            <li>1 tbsp of vegetable oil</li>
+            <li>1 knob of butter</li>
+            <li>1 onion, diced</li>
+            <li>2 tsp Bart Smoked Garlic Paste</li>
+            <li>1/2 tsp  Bart Sweet Smoked Paprika</li>
+            <li>350g of mushrooms, sliced</li>
+            <li>50ml of brandy, or white wine</li>
+            <li>150ml of vegetable stock</li>
+            <li>2 tbsp of sour cream</li>
+            <li>1 handful of parsley, dill and tarragon, chopped</li>
+            <li>Salt</li>
+            <li>Pepper</li>
+        </ul>
+
+    </div>
 ---
-
 {% include hero.html %}
-
-<section class="section section--extra">
-    <div class="section__row">
-        <div class="grid">
-            <div class="grid__unit grid__unit--two-thirds">
-                <div class="type">
-                    <h2>Method</h2>
-                </div>
-            </div>
-            <div class="grid__unit grid__unit--third">
-                <h2>Ingredients</h2>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="section__row">
-        <img src="/assets/img/hr.svg">
-    </div>
-</section>
+{% include cols.html %}

@@ -1,5 +1,6 @@
 .button{
     text-decoration: none;
+    text-transform: uppercase;
     display: inline-block;
     border: 0;
     background: $green;
@@ -7,5 +8,9 @@
     padding: 0 $padding;
     font-size: 1em;
     color: #111;
-    font-family: 'DIN Medium'
+    font-family: 'DIN Medium';
+    &--red{
+        background: $red;
+        color: #fff;
+    }
 }

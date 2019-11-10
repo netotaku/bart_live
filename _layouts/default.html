@@ -11,18 +11,24 @@
 
         <meta property="og:image" content="https://bart.agency.af/assets/img/hero.jpg"/>
         <meta property="og:title" content="{{ page.title | strip_html }}"/>
-        <meta property="og:description" content=""/>
+        <meta property="og:description" content="Bart is all about flavour, for over 50 years, discovering & sharing the best spices, herbs & seasonings from around the world to create magic in every taste."/>
         <meta property="og:site_name" content="Bart Ingredients"/>
         <meta property="og:url" content="https://bart.co.uk/"/>
         <meta property="og:type" content="website" />
+
+        <script src="https://use.fontawesome.com/610695cb43.js"></script>
 
         <!-- t: @bartingrdients -->
         <!-- i: @bartingrdients -->
         <!-- f: https://www.facebook.com/TheBartIngredientsCompany/ -->
 
     </head>
-    <body>
-        <a target="_window" class="banner banner__link" href="https://bart-ingredients.co.uk/">Find out more about Bart Ingredients</a>            
+
+    {% if page.body_class %}
+        <body class="{{ page.body_class }}">
+    {% else %}
+        <body>
+    {% endif %}
         
         {{ content }}
         {% include footer.html %}

@@ -2,9 +2,8 @@
     
     padding: $padding*2;
 
-
-
     &__row{
+        display: block;
         margin: auto;
         max-width: 1200px;
     }

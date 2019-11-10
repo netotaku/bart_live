@@ -1,5 +1,17 @@
 .type{
-    p, ul, h2, h3{
+    p, ul, h2, h3, table{
         margin-bottom: $padding*2;
+    }
+
+    table{        
+        width: 100%;
+        th{
+            text-align: left;
+            width: 33.33%;
+            vertical-align: top;
+        }
+        td{
+            vertical-align: top;
+        }
     }
 }
