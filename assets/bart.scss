@@ -68,7 +68,8 @@ $break2: 800px;
 .recipe{
     .cols{
         .grid{
-            flex-direction: row;
+            display: flex;            
+            flex-direction: column-reverse;
         }
     }
 }
